@@ -1,0 +1,104 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+
+body {
+  background: #080808;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+a {
+  color: #fff;
+}
+/* font-family: 'Montserrat', sans-serif; */
+/* font-family: 'Pretendard','Noto Sans KR', sans-serif; */
+
+/* ---------------------- header ----------------------- */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 80px;
+  position: fixed;
+  right: 50px;
+  top: 50px;
+  z-index: 1000;
+  mix-blend-mode: difference;
+}
+
+header h1 {
+  animation: rotate 30s linear forwards infinite;
+  -moz-animation: rotate 30s linear forwards infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+header .gnb {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+header .gnb li {
+  width: fit-content;
+}
+
+header .gnb li a {
+  font-size: 18px;
+  font-weight: 500;
+  display: block;
+  position: relative;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+header .gnb li a::before {
+  position: absolute;
+  color: #fff;
+  top: 0;
+  left: 0;
+  width: 0%;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+header .gnb li:nth-child(1) a::before {
+  content: "About";
+}
+header .gnb li:nth-child(2) a::before {
+  content: "Works";
+}
+header .gnb li:nth-child(3) a::before {
+  content: "Contact";
+}
+
+header .gnb li a:hover::before {
+  width: 100%;
+}
+
+/* ---------------------- footer ----------------------- */
+footer {
+  width: 100%;
+}
+
+footer p {
+  padding: 20px 0 40px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+@media (max-width: 1199px), (max-height: 799px) {
+  header {
+    right: 30px;
+    top: 30px;
+  }
+}
