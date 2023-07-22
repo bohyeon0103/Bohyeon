@@ -152,6 +152,7 @@ body {
   padding-bottom: 2px;
   font-size: 24px;
   border-bottom: 2px solid #fff;
+  mix-blend-mode: difference;
   margin-top: 80px;
 }
 
@@ -371,4 +372,57 @@ body {
 .research .interview > p span {
   font-weight: 500;
   color: #fff;
+}
+/* =========================== system_essence ================================= */
+.system_essence {
+  margin-top: 120px;
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+}
+.system_essence .inner {
+  text-align: center;
+}
+.system_essence p {
+  color: #1b1b1b;
+  margin: 150px 0 300px;
+  font-size: 24px;
+  font-weight: 600;
+}
+.system_essence .essence_txt {
+  color: #1b1b1b;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.system_essence .essence_txt li {
+  width: 170px;
+  font-size: 38px;
+  font-weight: 600;
+  word-break: keep-all;
+  position: relative;
+}
+.system_essence .essence_txt li::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -150px;
+  transform: translateX(-50%);
+}
+.system_essence .essence_txt li:nth-child(1)::after {
+  width: 150px;
+  height: 103px;
+  background: url(../images/project1/essence1.gif) no-repeat center;
+  background-size: cover;
+}
+.system_essence .essence_txt li:nth-child(2)::after {
+  width: 100px;
+  height: 100px;
+  background: url(../images/project1/essence2.gif) no-repeat center;
+  background-size: cover;
+}
+.system_essence .essence_txt li:nth-child(3)::after {
+  width: 150px;
+  height: 120px;
+  background: url(../images/project1/essence3.gif) no-repeat center;
 }
