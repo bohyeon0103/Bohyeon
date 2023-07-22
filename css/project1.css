@@ -225,11 +225,10 @@ body {
   margin-top: 300px;
   border-top: 2px solid #333;
   width: 100%;
-  height: 2000px;
+  height: 1000px;
   background: url(../images/project1/research_bg.png) top no-repeat;
 }
 .research .inner {
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -248,7 +247,8 @@ body {
   transition: all 0.5s ease;
 }
 .research .chat:hover {
-  opacity: 0.5;
+  opacity: 0.6;
+  z-index: 10;
 }
 .research .chat p {
   font-size: 17px;
@@ -266,7 +266,7 @@ body {
   bottom: -27px;
 }
 .research .chat2 {
-  background: #3574ed;
+  background: #235bc4;
 }
 .research .chat2 p {
   color: #fff;
@@ -282,23 +282,23 @@ body {
 }
 .research .chat:nth-child(1) {
   position: absolute;
-  top: 200px;
+  top: 270px;
   left: 40px;
 }
 .research .chat:nth-child(2) {
   position: absolute;
-  top: 540px;
+  top: 560px;
   right: 0;
 }
 .research .chat:nth-child(3) {
   position: absolute;
-  top: 700px;
-  left: 70px;
+  top: 710px;
+  left: 20px;
 }
 .research .chat:nth-child(4) {
   position: absolute;
-  top: 160px;
-  right: 0;
+  top: 210px;
+  right: 10px;
 }
 .research .chat:nth-child(5) {
   position: absolute;
@@ -324,7 +324,7 @@ body {
   transition: all 0.3s ease;
 }
 .research .interview:hover {
-  background: #2b68da;
+  background: #215dcc;
   box-shadow: 5px 5px 1px 0px rgba(255, 255, 255, 0.2) inset;
 }
 
