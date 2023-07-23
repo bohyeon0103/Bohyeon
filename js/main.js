@@ -37,7 +37,7 @@ $(function () {
   observer.observe(project[0]);
   observer.observe(project[1]);
   observer.observe(project[2]);
-  observer.observe(project[3]);
+  // observer.observe(project[3]);
 
   let observer2 = new IntersectionObserver((e) => {
     e.forEach((txt) => {
@@ -53,7 +53,7 @@ $(function () {
   observer2.observe(txtBox[0]);
   observer2.observe(txtBox[1]);
   observer2.observe(txtBox[2]);
-  observer2.observe(txtBox[3]);
+  // observer2.observe(txtBox[3]);
 
   let observer3 = new IntersectionObserver((e) => {
     e.forEach((info) => {
