@@ -30,9 +30,36 @@ let observer1 = new IntersectionObserver((e) => {
 });
 
 let overviewTxt = document.querySelectorAll(".overview_p");
-observer.observe(overviewTxt[0]);
-observer.observe(overviewTxt[1]);
-observer.observe(overviewTxt[2]);
-observer.observe(overviewTxt[3]);
-observer.observe(overviewTxt[4]);
-observer.observe(overviewTxt[5]);
+for (let i = 0; i < overviewTxt.length; i++) {
+  observer1.observe(overviewTxt[i]);
+}
+
+let guide = new IntersectionObserver((e) => {
+  e.forEach((dGuide) => {
+    if (dGuide.isIntersecting) {
+      dGuide.target.style.opacity = 1;
+    } else {
+      dGuide.target.style.opacity = 0;
+    }
+  });
+});
+
+let guidePart = document.querySelectorAll(".guide");
+for (let i = 0; i < guidePart.length; i++) {
+  guide.observe(guidePart[i]);
+}
+
+let observerimg = new IntersectionObserver((e) => {
+  e.forEach((ui) => {
+    if (ui.isIntersecting) {
+      ui.target.style.opacity = 1;
+    } else {
+      ui.target.style.opacity = 0;
+    }
+  });
+});
+
+let uiImg = document.querySelectorAll(".ui_wrap li img");
+for (let i = 0; i < uiImg.length; i++) {
+  observerimg.observe(uiImg[i]);
+}
