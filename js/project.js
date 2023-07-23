@@ -63,3 +63,15 @@ let uiImg = document.querySelectorAll(".ui_wrap li img");
 for (let i = 0; i < uiImg.length; i++) {
   observerimg.observe(uiImg[i]);
 }
+
+let observer4 = new IntersectionObserver((e) => {
+  e.forEach((contactInfo) => {
+    if (contactInfo.isIntersecting) {
+      contactInfo.target.style.opacity = 1;
+    } else {
+      contactInfo.target.style.opacity = 0;
+    }
+  });
+});
+let contactBox = document.querySelectorAll(".contact_info");
+observer4.observe(contactBox[0]);

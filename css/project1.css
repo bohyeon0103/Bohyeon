@@ -366,8 +366,8 @@ body {
 }
 .research .interview > p {
   font-size: 22px;
-  font-weight: 200;
-  color: rgba(255, 255, 255, 0.8);
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6);
 }
 .research .interview > p span {
   font-weight: 500;
